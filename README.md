@@ -29,6 +29,6 @@ npm run dev
 
 ## دمو
 
-شما می‌توانید دمو پروژه را در  [Demo](https://sama-khodadady-weblog.vercel.app/) مشاهده کنید.
+شما می‌توانید دمو پروژه را در  [Demo](https://sama-khodadady-online-shop.vercel.app/) مشاهده کنید.
 
 </div>
