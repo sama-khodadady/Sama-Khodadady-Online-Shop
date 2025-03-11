@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container img {
+  width: 500px;
+  height: 500px;
+}
+
+.container a {
+  background-color: var(--color-OrangeSoda);
+  color: var(--color-White);
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+@media (max-width: 425px) {
+  .container {
+    width: calc(100% - 20px);
+    margin: 10px;
+  }
+  .container img {
+    width: 400px;
+    height: 400px;
+  }
+}

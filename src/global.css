@@ -1,0 +1,30 @@
+:root {
+  --color-Black: #000;
+  --color-DarkGrey: hsl(0, 0%, 40%);
+  --color-Brown: hsla(18, 92%, 60%, 0.286);
+  --color-OrangeSoda: hsl(9, 99%, 63%);
+  --color-Platinum: hsl(0, 0%, 89%);
+  --color-Seasalt: hsl(225, 40%, 98%);
+  --color-White: hsl(0, 0%, 100%);
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  max-width: 1200px;
+  min-height: 100vh;
+  padding: 10px;
+  background-color: var(--color-Seasalt);
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}

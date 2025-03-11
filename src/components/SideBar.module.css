@@ -1,0 +1,88 @@
+.sideBar {
+  width: 200px;
+  height: fit-content;
+  margin: 10px;
+  padding: 20px;
+  margin-left: 30px;
+  background-color: var(--color-White);
+  border: 2px dashed var(--color-Platinum);
+  border-radius: 20px;
+}
+
+.sideBar div {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: var(--color-OrangeSoda);
+  font-weight: 500;
+}
+
+.sideBar p {
+  margin-left: 10px;
+}
+
+.sideBar li {
+  list-style: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.sideBar li:hover {
+  color: var(--color-OrangeSoda);
+}
+
+.selected {
+  background-color: var(--color-Brown);
+  color: var(--color-OrangeSoda);
+  border-radius: 10px;
+}
+
+.responsiveSidebar {
+  display: none;
+}
+
+@media (max-width: 425px) {
+  .sideBar {
+    display: none;
+  }
+  .responsiveSidebar {
+    display: block;
+    margin: 10px 0 0 10px;
+    width: 160px;
+    height: fit-content;
+    font-size: 0.8rem;
+  }
+  .responsiveSidebar .sidebarButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-OrangeSoda);
+    border-radius: 8px;
+    color: var(--color-White);
+    padding: 5px;
+    position: relative;
+  }
+  .responsiveSidebar ul {
+    width: 160px;
+    list-style-type: none;
+    border: 2px dashed var(--color-Platinum);
+    background-color: var(--color-White);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 0.6rem;
+    position: absolute;
+  }
+  .responsiveSidebar li {
+    list-style: none;
+    padding: 5px;
+    cursor: pointer;
+  }
+  .responsiveSidebar li:hover {
+    color: var(--color-OrangeSoda);
+  }
+  .selected {
+    border-radius: 6px;
+  }
+}
