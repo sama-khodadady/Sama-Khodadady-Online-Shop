@@ -1,5 +1,6 @@
 // import { useCart } from "../context/CartContext";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import BasketCard from "../components/BasketCard";
 import BasketSidebar from "../components/BasketSidebar";
 
@@ -7,15 +8,14 @@ import image from "../assets/Group.png";
 import styles from "./CheckOutPage.module.css";
 
 const CheckOutPage = () => {
-  // const [state, dispatch] = useCart();
   const state = useSelector((store) => store.cart);
-  // const clickHandler = (type, payload) => dispatch({ type, payload });
 
   if (!state.itemsCounter) {
     return (
       <div className={styles.emptyCart}>
         <img src={image} alt="empty cart" />
         <h2>Cart is empty !!</h2>
+        <Link to="/products">Go Home Page</Link>
       </div>
     );
   }

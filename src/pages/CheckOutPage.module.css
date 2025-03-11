@@ -22,6 +22,14 @@
   margin-top: 2rem;
 }
 
+.emptyCart a {
+  background-color: var(--color-OrangeSoda);
+  margin-top: 1rem;
+  border-radius: 10px;
+  padding: 10px;
+  color: var(--color-White);
+}
+
 @media (max-width:425px) {
   .container {
     width: calc(100% - 20px);
